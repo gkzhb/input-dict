@@ -22,7 +22,7 @@ jobs:
       - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '3.5'
-      - run: wget https://github.com/studyzy/imewlconverter/releases/download/v2.9.0/imewlconverter_Linux_Mac.tar.gz
+          dotnet-version: '3.1.x'
+      - run: curl https://github.com/studyzy/imewlconverter/releases/download/v2.9.0/imewlconverter_Linux_Mac.tar.gz -O
       - run: tar -zxf ./imewlconverter_Linux_Mac.tar.gz
       - run: dotnet ImeWlConverterCmd.dll
