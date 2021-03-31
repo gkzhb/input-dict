@@ -24,6 +24,5 @@ jobs:
         with:
           dotnet-version: '3.1.x'
       - run: wget https://github.com/studyzy/imewlconverter/releases/download/v2.9.0/imewlconverter_Linux_Mac.tar.gz
-      - run: ls -al
       - run: tar -zxf ./imewlconverter_Linux_Mac.tar.gz
-      - run: dotnet ImeWlConverterCmd.dll
+      - run: dotnet ImeWlConverterCmd.dll -?
